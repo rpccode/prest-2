@@ -1,0 +1,224 @@
+
+
+
+.principal{
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.sombra {
+    box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    background-color: var(--blanco);
+    padding: 4rem;
+    border-radius: 1.6rem;
+}
+.dividido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transform: translateY(5rem);
+}
+.dosColumnas {
+    flex-direction: column;
+}
+.dosColumnas :first-child {
+    margin-bottom: 4rem;
+}
+@media (min-width: 768px) {
+    .dosColumnas {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+    .dosColumnas > div {
+        width: 50%;
+    }
+    .dosColumnas :first-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+.contenidopresupuesto {
+    width: 100%;
+}
+.contenidopresupuesto p {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--gris-oscuro);
+    font-size: 2.3rem;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenidopresupuesto p {
+        text-align: left;
+    }
+}
+.contenidopresupuesto p.negativo,
+.contenidopresupuesto p.negativo span {
+    color: red;
+}
+.contenidopresupuesto span {
+    font-weight: 900;
+    color: var(--azul);
+}
+.resectApp {
+    /* border: none; */
+    border-color: var(--primary);
+    border-width: 1.2px;
+    text-decoration: none;
+    padding: 8px;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--blanco);
+    border-radius: 1rem;
+    background-color: rgba(234, 6, 6, 0.808);
+    width: 100%;
+}
+.resectApp:hover {
+    background-color: rgba(215, 10, 10, 0.858);
+    cursor: pointer;
+    color: var(--blanco);
+}
+.listadoPrestamos {
+    
+    margin-top: 6rem;
+    
+}
+.listadoPrestamos h2 {
+    color: var(--gris-oscuro);
+    font-weight: 900;
+}
+
+.prestamo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.info{
+    display: block;
+    gap: 1rem;
+}
+.info p {
+    margin: 0 0 0.3rem 0;
+
+}
+
+.cantidadPrestamo{
+    font-size: 2rem;
+    color: var(--gris-oscuro);
+    font-weight: 900;
+}
+
+.negro span{
+    color: var(--negro);
+    font-size: 2rem;
+
+}
+.cantidadPrestamo span  {
+    color: var(--azul);
+    font-size: 2rem;
+
+}
+
+.boton  {
+    background-color: var(--primary);
+  border: none;
+    width: 100%;
+    margin-top: 6rem;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+    border-radius: 4px;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: #f79e06;
+    
+}
+
+
+.contenidoPrestamo{
+    display: flex;
+    gap: 2rem;
+}
+.contenidoPrestamo img{
+    align-items: center;
+    width: 6rem;
+   
+    
+
+}
+.descripcionPrestamo p {
+    margin: 0 0 0.3rem 0;
+}
+.descripcionPrestamo .categoria {
+    color: var(--gris);
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.descripcionPrestamo p {
+    margin-bottom: 1rem;
+}
+.descripcionPrestamo .nombrePrestamo {
+    color: var(--gris-oscuro);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.descripcionPrestamo .nombrePrestamo:hover {
+    cursor: pointer;
+}
+.descripcionPrestamo .fechaPrestamo {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--gris-oscuro);
+}
+.descripcionPrestamo .fechaPrestamo span {
+    font-weight: 400;
+}
+@media (max-width: 570px){
+    .cantidadPrestamo{
+        font-size: 1.2rem;
+    }
+    .cantidadPrestamo  span{
+        font-size: 1.4rem;
+    
+    }
+    .descripcionPrestamo .fechaPrestamo{
+        font-size: 1rem;
+    }
+    .descripcionPrestamo .nombrePrestamo{
+        font-size: 1.5rem;
+    }
+    .contenidoPrestamo img {
+        width: 6rem;
+    }
+}
+.perfil{
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.perfil{
+    
+}
+
+.perfilContenido {
+
+}

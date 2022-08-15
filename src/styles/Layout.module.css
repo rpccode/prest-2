@@ -1,0 +1,49 @@
+.nuevoGasto {
+    position: fixed;
+    bottom: 4rem;
+    right: 5rem;
+}
+
+.nuevoGasto img {
+    width: 5rem;
+}
+.nuevoGasto img:hover {
+    cursor: pointer;
+}
+.fijar {
+    overflow: hidden;
+    height: 100vh;
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0,0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    bottom:  3em;
+    right: 5%;
+    transform: translateX(-5%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: #2a2d35;
+}
+
+.menuOpen {
+    display: block;
+    opacity: 1;
+}
